@@ -1,0 +1,456 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  font-family: sans-serif;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+#index {
+  background: url(../image/campo.png);
+  width: 100%;
+  height: 1000px;
+}
+
+#productos {
+  background: url(../image/campo.png);
+  width: 100%;
+  height: 1000px;
+}
+
+#presupuesto {
+  background: url(../image/campo.png);
+  width: 100%;
+  height: 1000px;
+}
+
+#contacto {
+  background: url(../image/campo.png);
+  width: 100%;
+  height: 1000px;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+/* ----- ----- HEADER (MENU DE NAVIGACION ----- -----*/
+header .menu {
+  margin: 40px 0;
+  text-align: right;
+}
+
+/* En logo he le dado una anchura y altura, y he utiizado la propiedad "float" para hacer el logo flotate dentro de la columa del menu de navigacion. */
+.logo {
+  width: 60px;
+  /* AjustE el tamaño de la imagen */
+  height: 60px;
+  float: left;
+  margin: 20px 0;
+  border-radius: 50px;
+}
+
+header .menu a {
+  margin: 0 20px;
+  color: rgba(194, 189, 189, 0.5);
+  padding-bottom: 9px;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  font-size: 1em;
+}
+
+header .menu a:hover {
+  border-bottom: 2px solid #a04a4a;
+  /* he utilizado "a:hover" para al pasar el raton sobre sobre el menu se resalte una linea abajo. */
+}
+
+/* ---- INDEX ----*/
+/* ---- GALIRIA SLIDER 1ªSECTION ---- */
+.mi_portada .animaciones {
+  background: #f2f2f2;
+  padding: 30px 0;
+  background: transparent;
+  margin-top: 50px;
+}
+
+.mi_portada .titulo {
+  text-align: center;
+  color: #636363;
+  font-size: 34px;
+  line-height: 34px;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+
+.mi_portada .titulo .parrafo {
+  display: block;
+  margin-top: 10px;
+}
+
+
+.slider {
+  width: 100%;
+  max-width: 1000px;
+  height: 500px;
+  overflow: hidden;
+  margin: 50px auto;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.slides {
+  display: flex;
+  width: 500%;
+  height: 100%;
+  animation: slide 15s infinite;
+}
+
+.slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0%;
+  }
+
+  20% {
+    margin-left: 0%;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+
+  95% {
+    margin-left: -300%;
+  }
+
+  100% {
+    margin-left: -400%;
+  }
+}
+
+/* ---- 2ª SECTION ---- */
+.mi_portada .galerias {
+  background: #f2f2f2;
+  padding: 60px 0;
+  background: transparent;
+}
+
+.mi_portada .galerias .contenedor {
+  overflow: hidden;
+  /* he utilizado el "overflow: hidden;" para para controlar el desbordamiento del contenedor dentro del elemnto */
+}
+
+.mi_portada .galerias .titulo {
+  font-size: 34px;
+  line-height: 34px;
+  margin-bottom: 40px;
+  font-weight: 300;
+  color: #636363;
+  text-align: center;
+}
+
+.mi_portada .galerias .contenedor-galeria {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.mi_portada .galerias .contenedor-galeria .galeria {
+  width: 23%;
+  margin-bottom: 40px;
+}
+
+.mi_portada .galerias .contenedor-galeria .galeria .foto {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.mi_portada .galerias .contenedor-galeria .galeria .foto img {
+  width: 100%;
+  height: 300px;
+  vertical-align: top;
+  border-radius: 5px;
+}
+
+/* ---- 3ª SECTION ---- */
+.mi_portada .acerca-de .texto {
+  color: #a3a3a2;
+  font-weight: 600;
+  line-height: 30px;
+  max-width: 1000px;
+  width: 100%;
+  margin: 40px auto 60px auto;
+  background-color: transparent;
+  text-align: center;
+
+}
+
+.mi_portada .acerca-de .texto .blod {
+  color: #a04a4a;
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.mi_portada .acerca-de .texto .salto-linea {
+  margin-bottom: 20px;
+}
+
+/* ---- ---- PRODUCTO ---- ---- */
+.mi_principal .trabajos {
+  background: #f2f2f2;
+  padding: 60px 0;
+  background: transparent;
+}
+
+.mi_principal .trabajos .contenedor {
+  overflow: hidden;
+  /* he utilizado el "overflow: hidden;" para para controlar el desbordamiento del contenedor dentro del elemnto */
+}
+
+.mi_principal .titulo-1 {
+  font-size: 34px;
+  line-height: 34px;
+  margin-bottom: 40px;
+  font-weight: 300;
+  color: #a04a4a;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.mi_principal .trabajos .titulo-2 {
+  font-size: 34px;
+  line-height: 34px;
+  margin-bottom: 40px;
+  font-weight: 300;
+  color: #a04a4a;
+  text-align: center;
+  /* texto centrado */
+}
+
+.mi_principal .trabajos .contenedor-trabajos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.mi_principal .trabajos .contenedor-trabajos .trabajo {
+  width: 23%;
+  margin-bottom: 40px;
+}
+
+.mi_principal .trabajos .contenedor-trabajos .trabajo .foto {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.mi_principal .trabajos .contenedor-trabajos .trabajo .foto img {
+  width: 100%;
+  height: 300px;
+  vertical-align: top;
+  border-radius: 5px;
+}
+
+.mi_principal .trabajos .contenedor-trabajos .trabajo .descripcion {
+  text-align: center;
+}
+
+.mi_principal .trabajos .contenedor-trabajos .trabajo .descripcion .nombre {
+  font-weight: 700;
+  color: #3895ea;
+  margin-bottom: 10px;
+}
+
+.mi_principal .trabajos .contenedor-trabajos .trabajo .descripcion .categoria {
+  font-size: 14px;
+  color: #636363;
+}
+
+/* ---- ---- FOLMURIALIO ---- ---- */
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.form-contenedor {
+  background-color: transparent;
+  padding: 30px;
+  border-radius: 12px;
+  border: 5px solid #a04a4a;
+  box-shadow: 0 4px 12px rgba(168, 60, 60, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 100px;
+}
+
+.formulario .titulo {
+  margin-bottom: 50px;
+  color: #a04a4a;
+  font-size: 34px;
+  line-height: 34px;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 40px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.checkbox-container {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-container input {
+  margin-right: 8px;
+}
+
+button {
+  background-color: #a04a4a;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #b4f6cd;
+}
+
+/* ---- ---- CONTACTO ---- ----*/
+.contacto {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  flex-direction: column;
+}
+
+.contacto .titulo {
+  color: #a04a4a;
+  font-size: 34px;
+  line-height: 34px;
+  margin-bottom: 40px;
+  margin-top: 100px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.mapa img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.texto {
+  padding: 15px;
+  background-color: transparent;
+  font-size: 16px;
+  color: #888686;
+  margin-bottom: 50px;
+}
+
+/* ---- ---- FOOTER ---- ----*/
+footer .redes-sociales {
+  background: transparent;
+  padding: 30px 0;
+  width: 100%;
+}
+
+footer .redes-sociales .contenedor {
+  display: flex;
+  justify-content: center;
+
+}
+
+footer .redes-sociales a {
+  color: rgba(226, 223, 223, 0.5);
+  text-align: center;
+  width: 100px;
+  padding: 15px 0;
+  display: block;
+  border-radius: 3px;
+  font-size: 30px;
+  margin: 0 20px;
+}
+
+footer .redes-sociales .facebook:hover {
+  background: #1877f2;
+}
+
+footer .redes-sociales .instagram:hover {
+  background: #a94fe4;
+}
+
+footer .redes-sociales .youtube:hover {
+  background: #f30707;
+}
+
+footer .redes-sociales .meetup:hover {
+  background: #772023;
+}
+
+.copyright {
+  font-size: 0.8em;
+  /* Tamaño de fuente pequeño */
+  color: #777;
+  /* Color de texto gris */
+  margin: 20px;
+  text-align: center;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- para poder visualizar los iconos de redes sociales he tenido que utilizar el archivo FONT-AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="./Css/estilos.css" rel="stylesheet">
+    <title>index</title>
+</head>
+
+<body id="index">
+    <!-- 
+        - HE CREADO UN "HEADER" PARA AGRUPAR TODO EL CONTENIDO DEL MENU DE NAVIGACION.
+        - HEADER LO TENGO PRESENTE EN TODAS LAS PAGINA DEL TRABAJO FINAL, Y LOS ENLACE ENTE SI PARA PODER NAVIGAR ENTRE LAS DIFERENTES PAGINA DEL PROYECTO -->
+    <header>
+        <div class="contenedor">
+            <!-- EN LA ETIQUETA "SECTION" LE HE DADO EL ATRIBUTO "CLASS" CON EL VALOR "CONTENEDOR" PARA LUEGO PORDER TRABAJA ESTE CONTENEDOR EN LOS ESTILOS "CSS"-->
+            <div>
+                <img src="./image/LogoTipo.png" alt="BHMIMAR FOTÓGRAFO" width="500" height="500" class="logo">
+            </div>
+            <nav class="menu">
+                <!-- //he enlazado los archivos con el atributo "href" para al darle click al enlace vaya a su ruta asignada -->
+                <a href="#">Inicio</a>
+                <a href="./viewa/productos.html">Producto</a>
+                <a href="./viewa/presupuesto.html">Presupuesto</a>
+                <a href="./viewa/">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <!-- AL IGUAL QUE LA ANTERIOR "SECTION" LE HE DADO UN ATRIBUTO "CLASS" CON EL "VALOR" MAINPARA CREAR EL CUERPO DE ESTA PAGINA  -->
+    <main class="mi_portada">
+
+        <section class="animaciones">
+            <h1 class="titulo">ÚNETE A MÍ EN UN EXTRAORDINARIO<span class="parrafo"> TOUR FOTOGRÁFICO</span></h1>
+            <div class="slider">
+                <div class="slides">
+                    <img src="./image/campo.png" alt="Imagen 1" width="4409" height="3307">
+                    <img src="./image/Rama.png" alt="Imagen 2" width="4184" height="3138">
+                    <img src="./image/FlorenNegro.png" alt="Imagen 3" width="4614" height="3461">
+                    <img src="./image/Seta.png" alt="Imagen 4" width="4506" height="3380">
+                    <img src="./image/triana.png" alt="Imagen 5" width="5720" height="3813">
+                </div>
+            </div>
+        </section>
+        <section class="galerias">
+            <div class="contenedor">
+                <h2 class="titulo">GALERÍA</h2>
+                <div class="contenedor-galeria">
+                    <div class="galeria">
+                        <div class="foto">
+                            <img src="./image/PuertaCastillo.png" alt="Puerta Azul" width="480" height="720">
+                        </div>
+                    </div>
+                    <div class="galeria">
+                        <div class="foto">
+                            <img src="./image/Hoja.jpg" alt="Monje" width="1919" height="2686">
+                        </div>
+                    </div>
+                    <div class="galeria">
+                        <div class="foto">
+                            <img src="./image/GuiaTren.jpg" alt="Playa" width="3043" height="4180">
+                        </div>
+                    </div>
+                    <div class="galeria">
+                        <div class="foto">
+                            <img src="./image/Arbol.jpg" alt="Barandilla" width="2548" height="3567">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="acerca-de">
+            <h2 class="titulo">SOBRE Badr Hmimar FOTÓGRAFO</h2>
+            <article class="texto">
+                <h3>ACERCA DE MÍ</h3>
+                <p class="salto-linea"> <span class="blod">Badr Hmimar FOTÓGRAFO</span> es una mirada única detrás del
+                    lente. Con una pasión
+                    innata por capturar momentos auténticos, emociones reales y la esencia de cada historia, Badr Hmimar
+                    ha construido una reputación como fotógrafo versátil, creativo y profesional.
+                    Desde retratos hasta fotografía de eventos, moda o paisajes urbanos, su estilo combina técnica
+                    precisa con una sensibilidad artística que transforma lo ordinario en extraordinario. Cada
+                    imagen es más que una fotografía: es una narrativa visual cuidadosamente compuesta. </p>
+                <p> Con sede en [Ciudad o Región], y disponible para proyectos nacionales e internacionales, <span
+                        class="blod">Badr Hmimar FOTÓGRAFO</span> ofrece servicios personalizados que se adaptan a cada
+                    cliente, entendiendo que cada sesión es única. Ya sea detrás de cámaras o editando en el estudio,
+                    BHMIMAR trabaja con detalle, pasión y
+                    compromiso, creando recuerdos que duran para siempre.</p>
+            </article>
+        </section>
+    </main>
+    <!-- AQUI EN EL PIE DE PAGINA "FOOTER" HE CREADO LAS DIFERENTES REDES SOCIALES ENLAZANDOLA CON LA ETIQUETA "<a href=" -->
+    <footer>
+        <div class="redes-sociales">
+            <div class="contenedor">
+                <a href="https://www.facebook.com" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" class="youtube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.meetup.com/es-ES/" class="meetup"><i class="fa-brands fa-meetup"></i></a>
+                <!-- PARA VISUALIZAR LOS ICONOS DE LAS REDES SOCIALES HE UTILIZADO LA ETIQUETA "<i class="fa-brands fa-facebook"></i>"-->
+            </div>
+            <div class="copyright">
+                <p> &copy; FOTOGRAFO 2025 C. Divina Pastora, 45, Sevilla</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

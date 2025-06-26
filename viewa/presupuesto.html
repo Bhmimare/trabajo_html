@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="../Css/estilos.css" rel="stylesheet">
+    <title>Presupuesto</title>
+</head>
+<body id="presupuesto">
+    <!-- 
+        - HE CREADO UN "HEADER" PARA AGRUPAR TODO EL CONTENIDO DEL MENU DE NAVIGACION.
+        - HEADER LO TENGO PRESENTE EN TODAS LAS PAGINA DEL TRABAJO FINAL, Y LOS ENLACE ENTE SI PARA PODER NAVIGAR ENTRE LAS DIFERENTES PAGINA DEL PROYECTO -->
+    <header>
+        <div class="contenedor">
+            <div>
+                <img src="../image/LogoTipo.png" alt="Nombre de la marca" width="500" height="500" class="logo">
+            </div>
+            <nav class="menu">
+                <a href="../index.html">Inicio</a>
+                <a href="productos.html">Producto</a>
+                <a href="#">Presupuesto</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <div class="formulario">
+        <form class="form-contenedor" id="contactForm">
+            <h2 class="titulo">ESCRIBINOS</h2>
+            <input type="text" id="nombre" name="nombre" pattern="[A-Za-z]{4,16}"
+                title="El nombre debe contener solo letras y tener entre 4 y 16 caracteres" placeholder="SU NOMBRE">
+
+
+            <input type="email" id="email" name="email" pattern="[A-Za-z]{4,16}"
+                title="El nombre debe contener solo letras y tener entre 4 y 16 caracteres "
+                placeholder="SU CORREO ELECTRÓNICO">
+
+            <!-- AQUI HE UTILIZADO LA ETIQUETA "LABEL" PARA DARLE NOMBRE AL IMPUT -->
+            <!-- TAMBIEN HE UTILIZADO EL ATRIPUTO "PLACEHOLDER" PARA VISUALIZAR EL TEXTO DENTRO DEL IMPUT-->
+            <input type="tel" id="telefono" name="telefono" pattern="[A-Za-z]{9,13}"
+                title="El nombre debe contener solo letras y tener entre 9 y 13 caracteres"
+                placeholder="SU NUMERO DE TELEFONO">
+
+            <!-- en textarea he utilizado el atributo ("rows="4") para indica que el área de texto tendrá 5 líneas de alto, y (cols="50") parta indica que tendrá 60 caracteres de ancho visible. en ves de (pattern porque no se me validava) -->
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="ESCRIBE TU MENSAJE AQUÍ"></textarea>
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="privacidad" name="privacidad" required>
+                <label for="privacidad" style="margin: 0;">Acepto la <a href="#" target="_blank">Política de privacidad</a></label>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <!-- AQUI EN EL PIE DE PAGINA "FOOTER" HE CREADO LAS DIFERENTES REDES SOCIALES ENLAZANDOLA CON LA ETIQUETA "<a href=" PARA ENLAZARLOS CON EL SITIO WEB DE CADA RED-SOCIAL -->
+    <footer>
+        <div class="redes-sociales">
+            <div class="contenedor">
+                <a href="https://www.facebook.com" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" class="youtube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.meetup.com/es-ES/" class="meetup"><i class="fa-brands fa-meetup"></i></a>
+                <!-- PARA VISUALIZAR LOS ICONOS DE LAS REDES SOCIALES HE UTILIZADO LA ETIQUETA "<i class="fa-brands fa-facebook"></i>" -->
+            </div>
+            <div class="copyright">
+                &copy; BHMIMAR FOTOGRAFO 2025 C. Divina Pastora, 45, Sevilla
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
